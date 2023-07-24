@@ -11,4 +11,8 @@ export const links = [
       name: "Pi-hole",
       link: "https://creeper6530.tplinkdns.com:53443/",
     },
+    {
+      name: "GitHub",
+      link: "https://github.com/creeper6530"
+    }
   ];
