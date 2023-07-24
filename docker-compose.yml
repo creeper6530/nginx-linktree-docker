@@ -12,5 +12,5 @@ services:
             - "80:80"
             - "443:443"
         volumes:
-            - "/etc/letsencrypt/archive/creeper6530.tplinkdns.com:/certs/archive/creeper6530.tplinkdns.com"
-            - "/etc/letsencrypt/live/creeper6530.tplinkdns.com:/certs/live/creeper6530.tplinkdns.com"
+            - "/etc/letsencrypt/archive/creeper6530.tplinkdns.com:/certs/archive/creeper6530.tplinkdns.com:ro"
+            - "/etc/letsencrypt/live/creeper6530.tplinkdns.com:/certs/live/creeper6530.tplinkdns.com:ro"
