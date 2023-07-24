@@ -1,5 +1,4 @@
-FROM nginx:stable
-#-alpine-slim
+FROM nginx:stable-alpine-slim
 
 COPY /www /www
 COPY ./nginx.conf /etc/nginx/conf.d/linktree.conf
