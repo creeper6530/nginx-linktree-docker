@@ -1,0 +1,14 @@
+services:
+    linktree:
+        container_name: linktree
+        image: built-linktree
+        build:
+            context: .
+            dockerfile: Dockerfile
+        restart: unless-stopped
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - "/etc/letsencrypt/archive/creeper6530.tplinkdns.com:/certs/archive/creeper6530.tplinkdns.com"
+            - "/etc/letsencrypt/live/creeper6530.tplinkdns.com:/certs/live/creeper6530.tplinkdns.com"
