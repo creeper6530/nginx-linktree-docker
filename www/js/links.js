@@ -9,6 +9,6 @@ export const links = [
     },
     {
       name: "Pi-hole",
-      link: "https://creeper6530.tplinkdns.com:53443/",
+      link: "https://creeper6530.tplinkdns.com:53443/admin/login.php",
     },
   ];
