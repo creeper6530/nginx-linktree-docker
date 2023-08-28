@@ -14,8 +14,8 @@ services:
       timeout: 10s
       retries: 3
     ports:
-    - "80:80"
-    - "443:443"
+      - "8002:80"
+      - "28443:443"
     volumes:
-    - "/etc/letsencrypt/archive/creeper6530.tplinkdns.com:/certs/archive/creeper6530.tplinkdns.com:ro"
-    - "/etc/letsencrypt/live/creeper6530.tplinkdns.com:/certs/live/creeper6530.tplinkdns.com:ro"
+      - "/etc/letsencrypt/archive/creeper6530.tplinkdns.com:/certs/archive/creeper6530.tplinkdns.com:ro"
+      - "/etc/letsencrypt/live/creeper6530.tplinkdns.com:/certs/live/creeper6530.tplinkdns.com:ro"
