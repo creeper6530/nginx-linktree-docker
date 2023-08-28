@@ -10,7 +10,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "curl --silent --insecure --fail https://localhost:443/health-check || exit 1"]
-      interval: 5ms
+      interval: 5m
       timeout: 10s
       retries: 3
       start_period: 5s
