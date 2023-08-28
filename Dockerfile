@@ -1,6 +1,7 @@
 FROM nginx:stable-alpine-slim
+#HEALTHCHECK --interval=5m --timeout=10s --start-period=10s --start-interval=1s --retries=3 \
+#    CMD curl --silent --insecure --fail https://localhost:443/health-check || exit 1
 
-# For healthcheck
 RUN apk add curl
 
 COPY /www /www
