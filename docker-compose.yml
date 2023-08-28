@@ -15,6 +15,11 @@ services:
 #      retries: 3
 #      start_period: 30s
 #      start_interval: 5s
+    healthcheck:
+      test: ["CMD-SHELL", "curl --silent --insecure --fail https://localhost:443/health-check || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 3
     ports:
       - "8002:80"
       - "28443:443"
