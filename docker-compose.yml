@@ -13,7 +13,8 @@ services:
       interval: 5m
       timeout: 10s
       retries: 3
-      start_period: 5s
+      start_period: 10s
+      start_interval: 1s
     ports:
       - "8002:80"
       - "28443:443"
