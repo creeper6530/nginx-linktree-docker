@@ -26,3 +26,10 @@ services:
     volumes:
       - "/etc/letsencrypt/archive/creeper6530.tplinkdns.com:/certs/archive/creeper6530.tplinkdns.com:ro"
       - "/etc/letsencrypt/live/creeper6530.tplinkdns.com:/certs/live/creeper6530.tplinkdns.com:ro"
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    name: proxys_network
+    external: true
