@@ -11,4 +11,12 @@ export const links = [
       name: "Pi-hole",
       link: "https://creeper6530.tplinkdns.com:53443/admin/login.php",
     },
+    {
+      name: "Nginx Proxy Manager",
+      link: "https://creeper6530.tplinkdns.com:31793",
+    },
+    {
+      name: "Crafty",
+      link: "https://raspberrypi.local:5443",
+    }
   ];

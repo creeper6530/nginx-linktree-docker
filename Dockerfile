@@ -4,8 +4,8 @@ FROM nginx:stable-alpine-slim
 
 RUN apk add curl
 
-COPY /www /www
 COPY ./nginx.conf /etc/nginx/conf.d/linktree.conf
 RUN mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.disabled
+COPY /www /www
 
 EXPOSE 80/tcp 443/tcp
