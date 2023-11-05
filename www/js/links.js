@@ -17,6 +17,6 @@ export const links = [
     },
     {
       name: "Crafty",
-      link: "https://raspberrypi.local:5443",
+      link: "https://crafty.raspberrypi.local",
     }
   ];
