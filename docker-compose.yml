@@ -2,7 +2,7 @@ version: '3.8'
 services:
   linktree:
     container_name: linktree
-    image: localhost:5050/linktree
+    image: creeper6530/linktree
     build:
       context: .
       dockerfile: Dockerfile
