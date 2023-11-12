@@ -8,7 +8,7 @@ const linkContainer = document.getElementById("links");
 
 function addLink(name, link) {
   return `
-  <a href="${link}" class="link" target="blank">
+  <a href="${link}" class="link" target="_blank">
     <span>${name}  </span>
   </a>
   `;
