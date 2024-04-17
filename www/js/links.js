@@ -19,4 +19,8 @@ export const links = [
       name: "Crafty",
       link: "https://crafty.raspberrypi.local",
     },
+    {
+      name: "Privatebin (private pastebin)",
+      link: "https://privatebin.raspberrypi.local",
+    },
   ];
